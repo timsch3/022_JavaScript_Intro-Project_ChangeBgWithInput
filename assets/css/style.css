@@ -1,0 +1,38 @@
+/* --------------- Initial background color and form align */
+body {
+    text-align: center;
+    background-color: rgba(244, 244, 0, .6);
+}
+/* --------------- Form styling */
+form {
+    display: inline-block;
+    text-align: center;
+    margin-top: 35vh;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #fff;
+}
+form p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/* --------------- Text input and button styling */
+form input[type="button"] {
+    min-width: 100%;
+    padding: 3px; 
+    background-color: chartreuse;
+}
+form input[type="button"], #userInput {
+    border: none;
+    box-shadow: 2px 2px 0 0 #ccc, -2px -2px 0 0 #ccc,
+    2px -2px 0 0 #ccc, -2px 2px 0 0 #ccc;
+}
+/* --------------- Text input and button focused styling */
+form input[type="button"]:focus, #userInput:focus {
+    box-shadow: 2px 0 0 0 #bbb, 0 2px 0 0 #bbb, 2px 2px 0 0 #bbb,
+    -2px 2px 0 0 #ccc, 2px -2px 0 0 #ccc, -2px -2px 0 0 #ccc,
+    0 2px 4px 4px cornflowerblue, 0 -2px 4px 4px cornflowerblue,
+    2px 0 4px 4px cornflowerblue, -2px 0 4px 4px cornflowerblue;
+    outline: none;
+}
